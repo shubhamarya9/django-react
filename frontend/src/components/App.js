@@ -4,7 +4,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <h1>Django React</h1>
+        <h1>Django React - Sagar</h1>
       </div>
     );
   }

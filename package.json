@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch ./frontend/src/index.js --output ./frontend/static/frontend/bundle.js",
-    "build": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/bundle.js"
+    "build": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/bundle.js",
+    "server": "python manage.py runserver",
+    "start": "concurrently \"npm run dev\" \"npm run server\""
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "concurrently": "^4.1.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   },
